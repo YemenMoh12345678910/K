@@ -2,6 +2,59 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <title>مرحبا</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .animated-text {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+    .heart {
+      width: 100px;
+      height: 100px;
+      fill: red;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="animated-text">مرحبا</h1>
+  <!-- شعار المحبة (قلب) باستخدام SVG -->
+  <svg class="heart" viewBox="0 0 32 29.6">
+    <path d="M23.6,0c-3.4,0-6.4,2.4-7.6,5.9C14.8,2.4,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4
+             c0,9.5,16,21.2,16,21.2s16-11.7,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+  </svg>
+  
+  <script>
+    // تغيير لون الكلمة بشكل دوري باستخدام JavaScript
+    document.addEventListener("DOMContentLoaded", function() {
+      const textElement = document.querySelector('.animated-text');
+      const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+      let index = 0;
+      setInterval(() => {
+        textElement.style.color = colors[index];
+        index = (index + 1) % colors.length;
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
   <title>المشاريع الإحصائية</title>
   <style>
     body {
